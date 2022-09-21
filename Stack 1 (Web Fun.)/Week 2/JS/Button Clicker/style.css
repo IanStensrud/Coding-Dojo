@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'roboto', sans-serif;
+}
+.main-container {
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+}
+
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+
+.nav-title {
+    padding: 20px;
+    font-size: 24px;
+}
+.nav-search {
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.search-bar {
+    padding: 5px;
+}
+.nav-log {
+    padding: 20px;
+}
+.btn {
+    background-color: #2b78e4;
+    padding: 4px 10px;
+    color: white;
+    box-shadow: 2px 2px 0px 1px black;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+.left-column {
+    flex: 2;
+    padding: 20px 10px 20px 0px;
+}
+.right-column {
+    padding: 20px 0px 20px 10px;
+    flex: 1;
+}
+.card-left {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.card-left p,
+.card-left h2 {
+    font-size: 14px;
+    text-align: center;
+}
+.card-left h2,
+.card-left p span {
+    font-style: italic;
+}
+.card-right {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.card-p {
+    text-align: center;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.card h1,
+.card h2 {
+    padding: 7px 10px;
+}
+.like-btn {
+    margin-top: 5px;
+    padding: 3px 10px;
+    background-color: #ffd966;
+    box-shadow: 2px 2px black;
+}
+li {
+    list-style: none;
+}
+.card {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 2px solid black;
+    justify-content: space-evenly;
+    border-radius: 2px;
+}
+
+/* Right column elements */
+.right-column .card {
+    flex-direction: column;
+} 
+.add-definition {
+    width: 80%;
+    background-color: #93c47d;
+    padding: 7px 0;
+    font-weight: bold;
+    height: 40px;
+}
+.add-definition:hover {
+    background-color: #98c981;
+}
+.inspo-left {
+    padding: 10px;
+    font-size: 26px;
+}
+.inspo-right {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}

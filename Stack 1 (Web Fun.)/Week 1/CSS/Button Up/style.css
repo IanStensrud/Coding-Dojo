@@ -1,0 +1,42 @@
+.buttons {
+    margin: 50px;
+    width: 25%;
+}
+#search {
+    border-radius: 20px;
+    width: 175px;
+    color: mediumaquamarine;
+    border: 2px solid mediumaquamarine;
+    background-color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: block;
+    font-size: 1.1em;
+}
+#search:hover {
+    box-shadow: 2.5px 2.5px;
+}
+#subscribe {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: mediumseagreen;
+    border: 2px solid white;
+    padding: 4px;
+    display: block;
+    font-size: 2.3em;
+}
+#subscribe:hover {
+    box-shadow: 10px 10px;
+    border-color: mediumseagreen;
+}
+#account {
+    background-color: dodgerblue;
+    height: 40px;
+    width: 200px;
+    font-size: 1.12em;
+    color: white;
+    padding-top: 4px;
+    box-shadow: 3px 3px black;
+}

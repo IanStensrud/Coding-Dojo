@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.main-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.banner {
+    height: 55px;
+    width: 100%;
+    background-color: #333333;
+    position: fixed;
+    z-index: -1;
+} 
+.row {
+    display: flex;
+}
+.col, .col-2 {
+    padding: 30px 15px;
+    flex: 1;
+
+}
+.col-2 {
+    flex: 2;
+
+}
+
+/* ~~ This is for the navBar ~~ */
+.nav {
+    display: flex;
+    background-color: #333333;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+}
+.nav-title {
+    margin-left: 20px;
+    color: white;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 50%;
+    color: gray;
+}
+a {
+    text-decoration: none;
+    color: gray;
+    transition-duration: 0.2s;
+}
+a:hover {
+    color: white;
+}
+.btn {
+    background-color: #17a2b8;
+    width: 80px;
+    height: 30px;
+    color: white;
+    box-shadow: 2px 2px black;
+    font-size: 14px;
+    padding: 7px;
+    border-color: black;
+    cursor: crosshair;
+}
+.btn:hover {
+    box-shadow: 0px 0px 5px 2px #393939;
+}
+ /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+/* ~~ This is for the user card ~~ */
+.user-header {
+    width: 100%;
+    height: 125px;
+    background-color: #17a2b8;
+    margin-bottom: 70px;
+}
+#user-prof {
+    border-radius: 50%;
+    height: 190px;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    box-shadow:0px 0px 5px 3px silver;
+}
+.icon-s {
+    height: 20px;
+}
+.container {
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile {
+    padding: 10px;
+}
+.card, .edu-tainer, .req-tainer, .friend-tainer, .viewMore {
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.card h1,
+.card h3,
+.card p {
+    margin: 20px 0px;
+}
+.edit-profile {
+    color: #2b78e4;
+}
+ /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Start of edu-tainer (Education Container lol) */
+.edu-tainer, .req-tainer, .friend-tainer, .viewMore {
+    display: flex;
+    width: 100%;
+    border: 2px solid gray;
+    flex-wrap: wrap;
+}
+.edu-header, .req-header, .friend-header {
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+}
+.edu-header h2, .req-header h2, .req-header p, .friend-header p  {
+    align-items: center;
+    margin-left: 15px;
+    padding: 5px 0px;
+    color: white;
+}
+.edu-body {
+    display: flex;
+    flex-direction: column;
+}
+.edu-body a {
+    text-align: right;
+    color: deepskyblue;
+}
+.edu-body h1,
+.edu-body h3,
+.edu-body p {
+    flex: 1;
+    margin: 5px 15px;
+}
+.edu-body h3 {
+    color: gray;
+}
+.req-header p, .friend-header p {
+    font-size: 1.3em;
+    padding: 5px;
+}
+.req-header span {
+    background-color: floralwhite;
+    border-radius: 50%;
+    padding:3px 3px 3px 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 700;
+    color: #333333;
+}
+.friend-header span {
+    background-color: floralwhite;
+    border-radius: 35%;
+    padding:3px 3px 3px 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 700;
+    color: #333333;
+}
+.req-body, .friend-body {
+    padding: 10px;
+}
+.pf-s {
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.pf-xs {
+    height: 38px;
+    margin: 5px;
+}
+.requester {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.start, .end {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+#viewMore.start {
+    display: flex;
+    margin-top: 5px;
+    padding-top: 25px;
+    border-top: 2px solid gray;
+    font-size: 16px;
+    align-items: center;
+}
+#viewMore a {
+    color: deepskyblue;
+}

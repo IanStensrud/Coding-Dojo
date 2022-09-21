@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'roboto', sans-serif;
+}
+.main-box {
+    margin: 0 auto;
+    width: 50%;
+}
+.navbar {
+    background-color: black;
+    padding: 15px;
+    width: 100%
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-title {
+    color: white;
+}
+.feed-title {
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+.row {
+    display: flex;
+    padding: 10px 0;
+    
+}
+.left-column, .right-column {
+    border-radius: 2px;
+}
+.left-column {
+    flex: 1;
+    display: flex;
+    margin: 0 5px 0 0;
+}
+.prof-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    padding: 5px 10px;
+    height: 200px;
+}
+.prof-img {
+    display: flex;
+    justify-content: center;
+}
+.prof-img img{
+    height: 100px;
+}
+.add-av {
+    text-align: center;
+}
+.prof-name {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+
+.right-column {
+    flex: 4;
+    margin: 0 0 0 5px;
+}
+.feed-box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.feed-box .box-top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.feed-name {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 58%;
+}
+.box-top h3 {
+    font-size: 15px;
+}
+.like-count {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+
+}
+.like-btn {
+    background-color: #ffd966;
+    padding: 3px 12px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.box-bottom {
+    padding: 10px 0;
+    font-size: 16px;
+}

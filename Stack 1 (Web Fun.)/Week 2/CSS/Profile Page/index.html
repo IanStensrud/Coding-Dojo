@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <title>Profile Page</title>
+</head>
+<body>
+    <div class="banner"></div>
+    <div class="main-container">
+        <div class="nav">
+            <h1 class="nav-title">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+                <li><button class="btn" id="signOut">Sign Out</button></li>
+            </ul>
+        </div>
+        <div class="row">
+            <!-- This is the left feed -->
+            <div class="col-2">
+                <!-- Start of user card -->
+                <div class="card">
+                    <div class="user-header">
+                        <img src="images/user-circle.png" alt="user image" id="user-prof">
+                    </div>
+                    <div class="profile">
+                        <h1>Jane Doe</h1>
+                        <h3>
+                            <img src="images/map-marker.png" alt="pin" class="icon-s">
+                            Seattle
+                        </h3>
+                        <p> 
+                            Developer | Engineer | Problem Solver <br>
+                            Master of shadows and the Internet!
+                        </p>
+                        <p>
+                            <a href="#">
+                                <img src="images/gear.png" alt="gear icon" class="icon-s">
+                            </a>
+                            <a href="#" class="edit-profile">
+                                edit profile
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <!-- End of card -->
+                <div class="edu-tainer">
+                    <div class="edu-header">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="edu-body">
+                        <h1>Coding-Dojo - Full Stack Bootcamp</h1>
+                        <h3>Dec 2019 - Mar 2020</h3>
+                        <p>Triple black belt iin Python, MERN, and C#...</p>
+                        <a href="#"><p>Click to Read More</p></a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- This is the right feed -->
+            <div class="col">
+
+                <div class="req-tainer">
+                    <div class="req-header">
+                        <p><span>2 </span>Connection Requests</p>
+                    </div>
+                    <div class="req-body">
+                        <div class="requester">
+                            <span class="start">
+                                <img src="images/todd-s.jpg" alt="Todd E." class="pf-s">
+                                <span>Todd E.</span>
+                            </span>
+                            <span class="end">
+                                <img src="images/accept-circle.png" alt="accept" class="pf-xs">
+                                <img src="images/close-circle.png" alt="reject" class="pf-xs">
+                            </span>
+                        </div>
+                        <div class="requester">
+                            <span class="start">
+                                <img src="images/phil-s.jpg" alt="Todd E." class="pf-s">
+                                <span>Phil K.</span>
+                            </span>
+                            <span class="end">
+                                <img src="images/accept-circle.png" alt="accept" class="pf-xs">
+                                <img src="images/close-circle.png" alt="reject" class="pf-xs">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Requests -->
+
+                <!-- Start of Friends -->
+                <div class="friend-tainer">
+
+                    <div class="friend-header">
+                        <p><span>500+</span>Your Connections</p>
+                    </div>
+                    <div class="friend-whole">
+                        <div class="friend-body">
+                            <span class="start">
+                                <img src="images/adrien-s.jpg" alt="Adrien D." class="pf-s">
+                                <span>Adrien D.</span>
+                            </span>
+                        </div>    
+                        <div class="friend-body">
+                            <span class="start">    
+                                <img src="images/anne-s.jpg" alt="Anne J." class="pf-s">
+                                <span>Anne J.</span>
+                            </span>
+                        </div>
+                        <div class="friend-body">
+                            <span class="start">
+                                <img src="images/alayne-s.jpg" alt="Alayne T." class="pf-s">
+                                <span>Alayne T.</span>
+                            </span>
+                        </div>
+                        <div class="friend-body">
+                            <span class="start">
+                                <img src="images/arry-s.jpg" alt="Arry Y." class="pf-s">
+                                <span>Arry Y.</span>
+                            </span>
+                        </div>
+                        <div class="friend-body">
+                            <span class="start" id="viewMore"><span><a href="#">View More</a></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- End of Friends -->
+
+        </div>
+            
+    </div>
+
+</body>
+</html>

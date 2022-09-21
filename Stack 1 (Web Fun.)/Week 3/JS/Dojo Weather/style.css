@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.header {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color: #9fc5f8;
+    color: white;
+}
+.nav-bar {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.nav-title {
+    font-size: 1.3em;
+    padding: 5px 0;
+}
+.city-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    cursor: pointer;
+}
+.city-list li {
+    padding: 15px 25px;
+}
+.main-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin-bottom: 15px;
+}
+.city-title h2 {
+    display: flex;
+    align-items: center;
+}
+.temp-controls label {
+    font-weight: lighter;
+    font-size: .9em;
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.days {
+    display: flex;
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+    margin: 5px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 275px;
+}
+.day-name h3 {
+    font-size: 1.3em;
+    padding: 0 5px;
+    font-weight: bold;
+}
+.day-icon {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.day-icon img {
+    height: 125px;
+    border-radius: 50%;
+}
+.day-icon span {
+    margin: 15px 0 0 0;
+}
+.temp-extremes {
+    display: flex;
+    justify-content: space-around;
+}
+.hot {
+    color: #d02f2c;
+}
+.cold {
+    color: #2c78e4;
+}
+.hot, .cold {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.cookie-popup {
+    position: fixed;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    border: 2px solid black;
+    border-radius: 3px;
+    bottom: 0%;
+}
+.cookie-img {
+    padding: 40px;
+}
+.cookie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 
+}
+.cookie-info p {
+    width: 80%;
+}
+.cookie-btn {
+    padding: 20px;
+}
+.accept-btn {
+    height: 30px;
+    width: 100px;
+    background-color: #9fc5f8;
+    box-shadow: 2px 2px black;
+    font-size: 1em;
+}
+.accept-btn:hover {
+    background-color: #7895bc;
+    cursor: pointer;
+}

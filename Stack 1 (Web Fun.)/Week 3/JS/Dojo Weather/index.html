@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <title>DojoWeather</title>
+</head>
+<body>
+    <div class="header">
+        <div class="nav-bar">
+            <div class="nav-title">
+                <h1>DojoWeather</h1>
+            </div>
+            <ul class="city-list">
+                <li><a onclick="loadReport(0)"><span class="burbank">Burbank</span></a></li>
+                <li><a onclick="loadReport(1)"><span class="chicago">Chicago</span></a></li>
+                <li><a onclick="loadReport(2)"><span class="dallas">Dallas</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-container">
+
+        <div class="top-bar">
+            <div class="city-title">
+                <h2>San Jose</h2>
+            </div>
+            <div class="temp-controls">
+                <!-- <p>show temperature in </p> -->
+                <label for="temps">show temperature in </label>
+                <select id="temps" name="temps" onchange="changeTemps(this)">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="days" id="today">
+                <div class="day-name">
+                    <h3>Today</h3>
+                </div>
+                <div class="day-icon">
+                    <img src="assets/some_rain.png">
+                    <span>some rain</span>
+                </div>
+                <div class="temp-extremes">
+                    <div class="hot">
+                        <span id="todays-1">24°</span>
+                    </div>
+                    <div class="cold">
+                        <span id="todays-2">18°</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="days" id="tomorrow">
+                <div class="day-name">
+                    <h3>Tomorrow</h3>
+                </div>
+                <div class="day-icon">
+                    <img src="assets/some_sun.png">
+                    <span>some sun</span>
+                </div>
+                <div class="temp-extremes">
+                    <div class="hot">
+                        <span id="tomorrows-1">27°</span>
+                    </div>
+                    <div class="cold">
+                        <span id="tomorrows-2">19°</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="days" id="friday">
+                <div class="day-name">
+                    <h3>Friday</h3>
+                </div>
+                <div class="day-icon">
+                    <img src="assets/some_clouds.png">
+                    <span>some clouds</span>
+                </div>
+                <div class="temp-extremes">
+                    <div class="hot">
+                        <span id="fridays-1">21°</span>
+                    </div>
+                    <div class="cold">
+                        <span id="fridays-2">16°</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="days" id="saturday">
+                <div class="day-name">
+                    <h3>Saturday</h3>
+                </div>
+                <div class="day-icon">
+                    <img src="assets/some_sun.png">
+                    <span>some sun</span>
+                </div>
+                <div class="temp-extremes">
+                    <div class="hot">
+                        <span id="saturdays-1">26°</span>
+                    </div>
+                    <div class="cold">
+                        <span id="saturdays-2">21°</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cookie-popup">
+            <div class="cookie-img">
+                <img src="assets/cookie.png" class="cookie">
+            </div>
+            <div class="cookie-info">
+                <h2>Stop! Cookie Time</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <div class="cookie-btn">
+                <button class="accept-btn" onclick="removeCookiePop()">I Accept</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

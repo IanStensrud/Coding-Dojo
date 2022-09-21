@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YELLOW BELT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+
+            <div class="header-top">
+                <div class="header-title">
+                    <img src="assets/heart-light.png" alt="heart">
+                    <h1>Pet Shelter</h1>
+                </div>
+                <div class="header-links">
+                    <div class="find">
+                        <a href="#"><span>Find a Pet</span></a>
+                    </div>
+                    <div class="about">
+                        <a href="#"><span>About</span></a>
+                    </div>
+                    <div class="donate" id="disappear">
+                        <button class="btn" id="trigger" onclick="disappear('disappear')">Donate</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="pet-search">
+                    <label for="search-pet">I'm looking for a...</label>
+                    <div class="line-up">
+                        <img src="assets/paw-light.png" alt="paw">
+                        <select name="search-pet" id="search-pet" onchange="animalAlert(this)">
+                            <option value="Any Pets" id="any-pets" selected>Any Pet</option>
+                            <option value="Dogs" id="dogs">Dogs</option>
+                            <option value="Cats" id="cats">Cats</option>
+                            <option value="Alien Homonids" id="alien-homonids">Alien Homonids</option>
+                        </select>  
+                    </div>
+                </div>
+
+                <div class="location">
+                    <label for="search-pet">In or around...</label>
+                    <div class="line-up">
+                        <img src="assets/pin-light.png" alt="pin">
+                        <input type="text" placeholder="City or Zip">
+                    </div>
+                </div>
+
+                <div class="find-friend">
+                    <button class="btn" id="find-friend">Find Your New Best Friend</button>
+                </div>
+            </div> 
+
+        </div>
+        <div class="footer">
+            <div class="main-feed">
+
+                <div class="card">
+                    <div class="card-left">
+                        <img src="assets/pepper.jpg" alt="pepper">
+                        <div class="card-info">
+                            <h2>Pepper</h2>
+                            <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <div class="petting-info">
+                            <h4><span id="0">3</span> scritch(es)</h4>
+                            <button class="btn" onclick="pet(0)">Pet Pepper?</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-left">
+                        <img src="assets/bruce.jpg" alt="bruce">
+                        <div class="card-info">
+                            <h2>Bruce</h2>
+                            <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <div class="petting-info">
+                            <h4><span id="1">5</span> scritch(es)</h4>
+                            <button class="btn" onclick="pet(1)">Pet Bruce?</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card-left">
+                        <img src="assets/oscar.jpg" alt="oscar">
+                        <div class="card-info">
+                            <h2>Oscar</h2>
+                            <p>Oscar is bright, energetic and friendly. He is looking for a good home.</p>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <div class="petting-info">
+                            <h4><span id="2">8</span> scritch(es)</h4>
+                            <button class="btn" onclick="pet(2)">Pet Oscar?</button>
+                        </div>
+                    </div>    
+                </div>
+                <div class="card" id="skizzy">
+                    <div class="card-left">
+                        <img src="https://www.giantbomb.com/a/uploads/scale_medium/8/87790/1676484-hominid.png" alt="homonid">
+                        <div class="card-info">
+                            <h2>Skizzy</h2>
+                            <p>Skizzy isn't the most understood pet, but we think that adds to his charm!*</p>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <div class="petting-info">
+                            <h4><span id="3">0</span> scritch(es)</h4>
+                            <button class="btn" onclick="pet(3)">Pet Skizzy? <span class="pet-moji">🥺👉👈</span></button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
